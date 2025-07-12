@@ -1,540 +1,523 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.6">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 20.0px '.SF NS'; color: #ecf4fb; -webkit-text-stroke: #ecf4fb}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 20.0px '.SF NS'; color: #ecf4fb; -webkit-text-stroke: #ecf4fb; min-height: 23.0px}
-    span.s1 {font-kerning: none}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Megan Ratcliff - B2B Marketing Leader</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .fade-in {
+      animation: fadeIn 1s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .skill-tag {
+      transition: all 0.3s ease;
+    }
+    .skill-tag:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .experience-card {
+      transition: all 0.3s ease;
+    }
+    .experience-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    }
+    .details-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease-in-out;
+    }
+    .details-content.show {
+      max-height: 1000px; /* Adjust as needed */
+    }
+    .modal-overlay {
+      transition: opacity 0.3s ease;
+    }
+    .modal-content {
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
   </style>
 </head>
-<body>
-<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
-<p class="p1"><span class="s1">&lt;html lang="en"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;head&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;title&gt;Megan Ratcliff - B2B Marketing Leader&lt;/title&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;style&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>body {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-family: 'Inter', sans-serif;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.fade-in {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>animation: fadeIn 1s ease-in-out;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>@keyframes fadeIn {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>from { opacity: 0; transform: translateY(20px); }</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>to { opacity: 1; transform: translateY(0); }</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.skill-tag {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>transition: all 0.3s ease;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.skill-tag:hover {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>transform: translateY(-2px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>box-shadow: 0 4px 12px rgba(0,0,0,0.1);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.experience-card {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>transition: all 0.3s ease;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.experience-card:hover {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>transform: translateY(-5px);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>box-shadow: 0 10px 20px rgba(0,0,0,0.08);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.details-content {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>max-height: 0;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>overflow: hidden;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>transition: max-height 0.5s ease-in-out;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.details-content.show {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>max-height: 1000px; /* Adjust as needed */</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.modal-overlay {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>transition: opacity 0.3s ease;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.modal-content {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>transition: transform 0.3s ease, opacity 0.3s ease;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
-<p class="p1"><span class="s1">&lt;body class="bg-gray-50 text-gray-800"&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;header class="bg-white shadow-sm sticky top-0 z-50"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;nav class="container mx-auto px-6 py-4 flex justify-between items-center"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="text-2xl font-bold text-gray-900"&gt;Megan Ratcliff&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="hidden md:flex space-x-8"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;a href="#about" class="text-gray-600 hover:text-indigo-600 transition"&gt;About&lt;/a&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;a href="#expertise" class="text-gray-600 hover:text-indigo-600 transition"&gt;Expertise&lt;/a&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;a href="#experience" class="text-gray-600 hover:text-indigo-600 transition"&gt;Experience&lt;/a&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;a href="#accolades" class="text-gray-600 hover:text-indigo-600 transition"&gt;Accolades &amp; Certifications&lt;/a&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;button data-modal-trigger class="bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 transition"&gt;Contact&lt;/button&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="md:hidden"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;button id="mobile-menu-button" class="text-gray-600 hover:text-indigo-600 focus:outline-none"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"&gt;&lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"&gt;&lt;/path&gt;&lt;/svg&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/button&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/nav&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div id="mobile-menu" class="hidden md:hidden px-6 pb-4"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;a href="#about" class="block py-2 text-gray-600 hover:text-indigo-600 transition"&gt;About&lt;/a&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;a href="#expertise" class="block py-2 text-gray-600 hover:text-indigo-600 transition"&gt;Expertise&lt;/a&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;a href="#experience" class="block py-2 text-gray-600 hover:text-indigo-600 transition"&gt;Experience&lt;/a&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;a href="#accolades" class="block py-2 text-gray-600 hover:text-indigo-600 transition"&gt;Accolades &amp; Certifications&lt;/a&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;button data-modal-trigger class="block w-full mt-2 bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 transition text-center"&gt;Contact&lt;/button&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/header&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;main class="container mx-auto px-6 py-12 fade-in"&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;section id="about" class="py-20"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="grid md:grid-cols-5 gap-12 items-center"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="md:col-span-2"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;img src="https://i.imgur.com/KfmoeP2.jpeg" alt="Megan Ratcliff Headshot" class="rounded-lg shadow-2xl w-full max-w-sm mx-auto" onerror="this.onerror=null;this.src='https://placehold.co/400x400/E2E8F0/4A5568?text=Megan+R.';"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="md:col-span-3"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight mb-4"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>Hi, I'm Megan.</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/h1&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="text-lg text-gray-600 mb-6"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>I'm a B2B Marketing Strategist &amp; AI Enabler, passionate about turning 'A-ha' Moments into Revenue. I build and lead high-performing marketing teams that bridge the gap between sales and marketing to drive exceptional growth.</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="text-lg text-gray-600 mb-6"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>My passion lies in strengthening the bridge between marketing and sales, ensuring that every initiative directly supports our shared revenue goals while delivering genuine value to our clients.</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="text-lg text-gray-600"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>What sets my approach apart is the specialized marketing AI ecosystem I leverage—from strategic planners to campaign copywriters. This allows my teams to amplify their capabilities, blending cutting-edge technology with the essential human connection that builds lasting business relationships.</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;section id="ai-ecosystem" class="py-20 border-t bg-white"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="text-center"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;h2 class="text-4xl font-bold text-gray-900 mb-12"&gt;My Marketing AI Ecosystem&lt;/h2&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;p class="text-lg text-gray-600 max-w-3xl mx-auto mb-12"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>This is how I structure my AI-powered marketing teams. By creating a hub-and-spoke model with specialized AI agents, we amplify our capabilities, ensuring every part of the marketing engine is optimized for performance while maintaining the critical human element of strategy and connection.</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="max-w-4xl mx-auto"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;img src="https://i.imgur.com/NcntMJQ.png" alt="Marketing AI Ecosystem Diagram" class="rounded-lg shadow-xl w-full" onerror="this.onerror=null;this.src='https://placehold.co/1024x576/E2E8F0/4A5568?text=AI+Ecosystem+Diagram';"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;section id="expertise" class="py-20 border-t"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h2 class="text-4xl font-bold text-center text-gray-900 mb-12"&gt;Areas of Expertise&lt;/h2&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="skill-tag bg-gray-100 p-4 rounded-lg text-center"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-lg font-semibold text-gray-900"&gt;Demand Generation&lt;/h3&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="skill-tag bg-gray-100 p-4 rounded-lg text-center"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-lg font-semibold text-gray-900"&gt;GTM Strategy&lt;/h3&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="skill-tag bg-gray-100 p-4 rounded-lg text-center"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-lg font-semibold text-gray-900"&gt;Account-Based Experience (ABX)&lt;/h3&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="skill-tag bg-gray-100 p-4 rounded-lg text-center"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-lg font-semibold text-gray-900"&gt;Sales &amp; Marketing Alignment&lt;/h3&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="skill-tag bg-gray-100 p-4 rounded-lg text-center"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-lg font-semibold text-gray-900"&gt;AI Enablement&lt;/h3&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="skill-tag bg-gray-100 p-4 rounded-lg text-center"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-lg font-semibold text-gray-900"&gt;Integrated Campaigns&lt;/h3&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="skill-tag bg-gray-100 p-4 rounded-lg text-center"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-lg font-semibold text-gray-900"&gt;Partnership Marketing&lt;/h3&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="skill-tag bg-gray-100 p-4 rounded-lg text-center"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-lg font-semibold text-gray-900"&gt;Team Leadership&lt;/h3&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;section id="experience" class="py-20 border-t"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h2 class="text-4xl font-bold text-center text-gray-900 mb-12"&gt;Professional Journey&lt;/h2&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="space-y-8"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="bg-white p-8 rounded-lg shadow-lg experience-card"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="flex justify-between items-start mb-4"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;h3 class="text-3xl font-bold text-gray-900"&gt;&lt;a href="https://dice.com/hiring" target="_blank" rel="noopener noreferrer" class="text-gray-900 hover:text-indigo-600 transition"&gt;Dice&lt;/a&gt;&lt;/h3&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;p class="text-lg text-indigo-600 font-medium"&gt;December 2023 - Present&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="space-y-6 border-l-2 border-indigo-100 pl-6"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;h4 class="text-xl font-semibold"&gt;Senior Director, Marketing&lt;/h4&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;p class="text-sm text-gray-500 mb-2"&gt;June 2025 - Present&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;p class="text-gray-600"&gt;Leading end-to-end marketing strategy for Dice's two-sided marketplace, driving growth for both tech professionals and the companies that hire them, including initiatives to reduce Customer Acquisition Cost (CAC).&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;div class="details-content"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;ul class="list-disc list-inside text-gray-600 mt-2 pl-2 space-y-1"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;li&gt;Orchestrating comprehensive digital transformation (DX) initiatives to modernize customer experience.&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;li&gt;Optimizing B2B demand generation and ABX programs while navigating macroeconomic headwinds.&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;li&gt;Evolving B2C acquisition strategy to balance growth with resource optimization.&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;li&gt;Driving revenue through integrated campaigns across paid media, SEO/GEO, content strategy, and partnership channels.&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;/ul&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;button class="toggle-details text-indigo-600 hover:underline mt-2 font-semibold"&gt;Show More&lt;/button&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;h4 class="text-xl font-semibold"&gt;Director, Marketing&lt;/h4&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;p class="text-sm text-gray-500 mb-2"&gt;January 2025 - July 2025&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;p class="text-gray-600"&gt;Partnered across go-to-market teams to drive B2B growth during a period of significant market transformation, including leading partnership marketing that exceeded revenue targets by 60% and improving MQL-C/W conversion rate by 2%.&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;div class="details-content"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;ul class="list-disc list-inside text-gray-600 mt-2 pl-2 space-y-1"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;li&gt;Scaled ABX pilot program to full production, working with sales leadership to identify target accounts and create coordinated engagement strategies.&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;li&gt;Spearheaded cross-functional Conversion Rate Taskforce to optimize buyer journey touchpoints.&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;li&gt;Adapted demand generation strategy in response to search ecosystem changes and macroeconomic pressures.&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;/ul&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;button class="toggle-details text-indigo-600 hover:underline mt-2 font-semibold"&gt;Show More&lt;/button&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;h4 class="text-xl font-semibold"&gt;Senior Manager, Marketing&lt;/h4&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;p class="text-sm text-gray-500 mb-2"&gt;December 2023 - January 2025&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;p class="text-gray-600"&gt;Led ABX go-to-market strategy for Dice, driving B2B growth through integrated marketing campaigns and strategic agency partnerships, delivering 12% more MQLs YoY with 52% more efficiency and funding new opportunities through cost efficiencies.&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;div class="details-content"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;ul class="list-disc list-inside text-gray-600 mt-2 pl-2 space-y-1"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;li&gt;Used cost efficiencies to fund the ABX program that is delivering net new opportunities for the org.&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;/ul&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;button class="toggle-details text-indigo-600 hover:underline mt-2 font-semibold"&gt;Show More&lt;/button&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="bg-white p-8 rounded-lg shadow-lg experience-card"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="flex justify-between items-start mb-4"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;h3 class="text-3xl font-bold text-gray-900"&gt;&lt;a href="https://www.quarry.com/" target="_blank" rel="noopener noreferrer" class="text-gray-900 hover:text-indigo-600 transition"&gt;Quarry&lt;/a&gt;&lt;/h3&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;p class="text-lg text-indigo-600 font-medium"&gt;November 2022 - December 2023&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="border-l-2 border-indigo-100 pl-6"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;h4 class="text-xl font-semibold"&gt;Account Director&lt;/h4&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;p class="text-gray-600"&gt;Led account and marketing strategy for enterprise B2B tech clients including LG, Epiroc, Wonderlic, and Tackle.io, notably securing and growing the Epiroc partnership and developing an award-winning ABM campaign.&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;div class="details-content"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;ul class="list-disc list-inside text-gray-600 mt-2 pl-2 space-y-1"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;li&gt;Architected integrated demand generation strategies across the full marketing stack.&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;li&gt;Partnered with C-suite executives to align marketing initiatives with business objectives.&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;li&gt;Contributed to new business efforts, leveraging client success stories to expand agency portfolio.&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;/ul&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;button class="toggle-details text-indigo-600 hover:underline mt-2 font-semibold"&gt;Show More&lt;/button&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="bg-white p-8 rounded-lg shadow-lg experience-card"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="flex justify-between items-start mb-4"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;h3 class="text-3xl font-bold text-gray-900"&gt;&lt;a href="https://anthologic.com/" target="_blank" rel="noopener noreferrer" class="text-gray-900 hover:text-indigo-600 transition"&gt;Anthologic&lt;/a&gt;&lt;/h3&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;p class="text-lg text-indigo-600 font-medium"&gt;March 2015 - November 2022&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="space-y-6 border-l-2 border-indigo-100 pl-6"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;h4 class="text-xl font-semibold"&gt;Account Director&lt;/h4&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;p class="text-sm text-gray-500 mb-2"&gt;January 2019 - November 2022&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;p class="text-gray-600"&gt;Led multi-million dollar client portfolios across diverse B2B industries, providing strategic oversight on integrated campaigns with a strong focus on demonstrating ROI through robust measurement frameworks.&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;div class="details-content"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;ul class="list-disc list-inside text-gray-600 mt-2 pl-2 space-y-1"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;li&gt;Orchestrated full-service client experiences spanning digital media, PR, creative, marketing automation, and content strategy.&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;li&gt;Led organic growth planning and execution, expanding existing client relationships.&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;li&gt;Mentored and developed direct reports, building a high-performing account team.&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;/ul&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;button class="toggle-details text-indigo-600 hover:underline mt-2 font-semibold"&gt;Show More&lt;/button&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;h4 class="text-xl font-semibold"&gt;Account Manager&lt;/h4&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;p class="text-sm text-gray-500 mb-2"&gt;January 2016 - January 2019&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;p class="text-gray-600"&gt;Managed marketing and communication strategies for diverse B2B clients across multiple industries, delivering a 63% increase in MQLs quarter-over-quarter through strategic digital approaches.&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;div class="details-content"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;ul class="list-disc list-inside text-gray-600 mt-2 pl-2 space-y-1"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;li&gt;Built and executed global channel program strategies that ensured seamless brand continuity.&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;li&gt;Managed complex client budgets and project timelines, ensuring on-time and on-budget delivery.&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;/ul&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;button class="toggle-details text-indigo-600 hover:underline mt-2 font-semibold"&gt;Show More&lt;/button&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;h4 class="text-xl font-semibold"&gt;Program Manager&lt;/h4&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;p class="text-sm text-gray-500 mb-2"&gt;March 2015 - January 2016&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;p class="text-gray-600"&gt;Managed the "Power Launch" program for a network of dealers, consulting on their marketing plans and localizing national assets.&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="bg-white p-8 rounded-lg shadow-lg experience-card"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="flex justify-between items-start mb-4"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;h3 class="text-3xl font-bold text-gray-900"&gt;Previous Experience&lt;/h3&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;button class="toggle-details text-indigo-600 hover:underline font-semibold" data-target="previous-experience-details"&gt;Show More&lt;/button&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div id="previous-experience-details" class="details-content space-y-6 border-l-2 border-indigo-100 pl-6"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;h4 class="text-xl font-semibold"&gt;Inside Sales and Project Manager&lt;/h4&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;p class="text-md text-gray-600 font-medium"&gt;Allegra Marketing, Print, Mail&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;p class="text-sm text-gray-500 mb-2"&gt;November 2011 - February 2015&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;p class="text-gray-600"&gt;Planned, developed, and tracked direct marketing campaigns for clients, including non-profits.&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;h4 class="text-xl font-semibold"&gt;Print Production Manager&lt;/h4&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;p class="text-md text-gray-600 font-medium"&gt;Two Rivers Marketing&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;p class="text-sm text-gray-500 mb-2"&gt;March 2011 - November 2011&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;p class="text-gray-600"&gt;Managed print production for a dealer-based client in the construction industry.&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;h4 class="text-xl font-semibold"&gt;Marketing Coordinator&lt;/h4&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;p class="text-md text-gray-600 font-medium"&gt;U.S. Roasterie&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;p class="text-sm text-gray-500 mb-2"&gt;July 2010 - April 2011&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;p class="text-gray-600"&gt;Developed the marketing plan and generated new business through various marketing outlets.&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;h4 class="text-xl font-semibold"&gt;LDP Associate&lt;/h4&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;p class="text-md text-gray-600 font-medium"&gt;Garner Printing&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;p class="text-sm text-gray-500 mb-2"&gt;May 2009 - July 2010&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;p class="text-gray-600"&gt;Learned the print industry through rotations in production, accounting, fulfillment, and project management.&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;section id="thought-leadership" class="py-20 border-t"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h2 class="text-4xl font-bold text-center text-gray-900 mb-12"&gt;Thought Leadership&lt;/h2&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;img src="https://i.imgur.com/cTFqviS.png" alt="The Human + AI Org LinkedIn Post" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/E2E8F0/4A5568?text=Post+Image';"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="p-6 flex flex-col flex-grow"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;h3 class="text-xl font-semibold mb-2"&gt;The Human + AI Org&lt;/h3&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;p class="text-gray-600 mb-4 flex-grow"&gt;"We all know that feeling - back-to-back meetings all day, then racing to deliver on commitments in those precious 30-minute gaps. So here's what I built for myself: a personal AI agent ecosystem that helps me think, create, and deliver better work even when time is tight."&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;a href="https://www.linkedin.com/feed/update/urn:li:activity:7307820390821548032/" target="_blank" rel="noopener noreferrer" class="text-indigo-600 font-semibold hover:underline mt-auto"&gt;Read on LinkedIn &amp;rarr;&lt;/a&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;img src="https://i.imgur.com/2kOabwl.png" alt="ROI LinkedIn Post" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/E2E8F0/4A5568?text=Post+Image';"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="p-6 flex flex-col flex-grow"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;h3 class="text-xl font-semibold mb-2"&gt;The ROI "Sweaty Palms" Moment&lt;/h3&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;p class="text-gray-600 mb-4 flex-grow"&gt;"Ever get sweaty palms when someone asks: 'What exactly are we doing in B2B demand right now?' Just me? Well, if it is you too - keep reading. Picture this: you have a complex demand gen strategy with multiple channels, campaign tiers, and audience segments—but trying to explain it all in a meeting often leads to glazed-over eyes and missed details."&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;a href="https://www.linkedin.com/posts/megan-ratcliff_ever-get-sweaty-palms-when-someone-asks-activity-7326693408578621440-JaKa?utm_source=share&amp;utm_medium=member_desktop" target="_blank" rel="noopener noreferrer" class="text-indigo-600 font-semibold hover:underline mt-auto"&gt;Read on LinkedIn &amp;rarr;&lt;/a&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;img src="https://i.imgur.com/fRK1FpJ.png" alt="Future of Marketing Leadership Post" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/E2E8F0/4A5568?text=Post+Image';"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="p-6 flex flex-col flex-grow"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;h3 class="text-xl font-semibold mb-2"&gt;The Future of Marketing Leadership&lt;/h3&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;p class="text-gray-600 mb-4 flex-grow"&gt;"Is this the future of marketing leadership? I've been curious lately with how my marketing role might evolve alongside AI. So I did what marketers do - I visualized it. The process started with simple questions: What parts of my job could be enhanced by AI? Which elements require that irreplaceable human touch?"&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;a href="https://www.linkedin.com/posts/megan-ratcliff_is-this-the-future-of-marketing-leadership-activity-7325661787524075521-Dzc9?utm_source=share&amp;utm_medium=member_desktop" target="_blank" rel="noopener noreferrer" class="text-indigo-600 font-semibold hover:underline mt-auto"&gt;Read on LinkedIn &amp;rarr;&lt;/a&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;img src="https://i.imgur.com/1w5ffaH.png" alt="GTM Playbook Post" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/E2E8F0/4A5568?text=Post+Image';"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="p-6 flex flex-col flex-grow"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;h3 class="text-xl font-semibold mb-2"&gt;The GTM Playbook is Dead. Now What?&lt;/h3&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;p class="text-gray-600 mb-4 flex-grow"&gt;"Everyone keeps saying the GTM playbook is dead. Cool. Now what? Here's what I actually did about it: I built an AI GTM strategist to help me evaluate our approach and figure out how to operate without the old rules..."&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;a href="https://www.linkedin.com/posts/megan-ratcliff_everyone-keeps-saying-the-gtm-playbook-is-activity-7333237380977410048-Yn2H?utm_source=share&amp;utm_medium=member_desktop" target="_blank" rel="noopener noreferrer" class="text-indigo-600 font-semibold hover:underline mt-auto"&gt;Read on LinkedIn &amp;rarr;&lt;/a&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="text-center mt-12"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;a href="https://www.linkedin.com/in/megan-ratcliff/recent-activity/all/" target="_blank" rel="noopener noreferrer" class="bg-indigo-600 text-white px-8 py-4 rounded-md text-lg font-semibold hover:bg-indigo-700 transition shadow-lg hover:shadow-xl"&gt;See More on LinkedIn&lt;/a&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;section id="media" class="py-20 border-t bg-white"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h2 class="text-4xl font-bold text-center text-gray-900 mb-12"&gt;In the Media&lt;/h2&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="bg-gray-100 p-6 rounded-lg shadow-md text-center flex flex-col justify-between"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;h3 class="text-xl font-semibold mb-2"&gt;Webinar: The Human + AI Org Playbook&lt;/h3&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;p class="text-gray-600 mb-4"&gt;Featured as a panelist on this 6sense webinar discussing the integration of AI into marketing organizations.&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;a href="https://6sense.com/events-webinars/the-human-ai-org-playbook/" target="_blank" rel="noopener noreferrer" class="text-indigo-600 font-semibold hover:underline mt-auto"&gt;Watch Now &amp;rarr;&lt;/a&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="bg-gray-100 p-6 rounded-lg shadow-md text-center flex flex-col justify-between"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;h3 class="text-xl font-semibold mb-2"&gt;Article: Boldest AI Moves&lt;/h3&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;p class="text-gray-600 mb-4"&gt;Mentioned in a LinkedIn article on how smaller teams are making significant strides with AI.&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;a href="https://www.linkedin.com/pulse/boldest-ai-moves-coming-from-smallest-budgets-liza-adams-tyumc/?trackingId=a%2BbEOo0iRRav%2BmNhSbznng%3D%3D" target="_blank" rel="noopener noreferrer" class="text-indigo-600 font-semibold hover:underline mt-auto"&gt;Read Article &amp;rarr;&lt;/a&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="bg-gray-100 p-6 rounded-lg shadow-md text-center flex flex-col justify-between"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;h3 class="text-xl font-semibold mb-2"&gt;Article: AI is Redefining GTM Jobs&lt;/h3&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;p class="text-gray-600 mb-4"&gt;Quoted in a LinkedIn article about the evolution of go-to-market roles with the rise of AI.&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;a href="https://www.linkedin.com/pulse/ai-redefining-gtm-jobs-from-tool-users-teammates-liza-adams-9nc7c/" target="_blank" rel="noopener noreferrer" class="text-indigo-600 font-semibold hover:underline mt-auto"&gt;Read Article &amp;rarr;&lt;/a&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;section id="accolades" class="py-20 border-t"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h2 class="text-4xl font-bold text-center text-gray-900 mb-12"&gt;Accolades &amp; Certifications&lt;/h2&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="max-w-4xl mx-auto text-center"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="bg-white p-8 rounded-lg shadow-lg mb-8"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="text-2xl font-semibold text-indigo-600 mb-4"&gt;Dice "HERO" Award&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="text-gray-600"&gt;Received for outstanding performance in 2024.&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="bg-white p-8 rounded-lg shadow-lg mb-8"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="text-2xl font-semibold text-indigo-600 mb-4"&gt;2020 Gold Medal Winner - B2 Awards&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="text-gray-600"&gt;Employer Branding Category for the "United. Inspired" campaign.&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;h3 class="text-3xl font-bold text-gray-900 mt-12 mb-8"&gt;Certifications&lt;/h3&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="space-y-6"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="bg-gray-100 p-6 rounded-lg text-left"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;h4 class="text-xl font-semibold text-gray-900"&gt;Fundamentals of Next-Gen Marketing&lt;/h4&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;p class="text-md text-gray-600"&gt;6sense | Issued April 2024&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;p class="text-sm text-gray-500 mt-1"&gt;Skills: Account based marketing&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="bg-gray-100 p-6 rounded-lg text-left"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;h4 class="text-xl font-semibold text-gray-900"&gt;Account-Based Experience (ABX) Certification&lt;/h4&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;p class="text-md text-gray-600"&gt;Demandbase | Issued November 2022&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="bg-gray-100 p-6 rounded-lg text-left"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;h4 class="text-xl font-semibold text-gray-900"&gt;ABM Certification: Advanced Course&lt;/h4&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;p class="text-md text-gray-600"&gt;Demandbase | Issued October 2022&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="bg-gray-100 p-6 rounded-lg text-left"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;h4 class="text-xl font-semibold text-gray-900"&gt;Marketing Analytics: Data Tools and Techniques&lt;/h4&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;p class="text-md text-gray-600"&gt;Wharton Online | Issued August 2022&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="bg-gray-100 p-6 rounded-lg text-left"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;h4 class="text-xl font-semibold text-gray-900"&gt;ABM Certification: Foundations&lt;/h4&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;p class="text-md text-gray-600"&gt;Demandbase | Issued August 2022&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="text-center text-gray-600 mt-12"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="text-lg mb-8"&gt;I'm always open to discussing new opportunities, sharing insights, or connecting with fellow professionals.&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;button data-modal-trigger class="bg-indigo-600 text-white px-8 py-4 rounded-md text-lg font-semibold hover:bg-indigo-700 transition shadow-lg hover:shadow-xl"&gt;Let's Connect&lt;/button&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/main&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;footer class="bg-gray-800 text-white py-6"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="container mx-auto px-6 text-center"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p&gt;&amp;copy; 2025 Megan Ratcliff. All Rights Reserved.&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/footer&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div id="contact-modal" class="modal-overlay fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50 hidden"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="modal-content bg-white rounded-lg shadow-2xl p-8 w-full max-w-md transform scale-95 opacity-0"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="flex justify-between items-center mb-6"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;h2 class="text-3xl font-bold text-gray-900"&gt;Contact Me&lt;/h2&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;button id="close-modal-button" class="text-gray-500 hover:text-gray-800 text-3xl"&gt;&amp;times;&lt;/button&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="space-y-6"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;label class="block text-sm font-medium text-gray-500"&gt;Email&lt;/label&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="flex items-center space-x-2 mt-1"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;input id="email-input" type="text" readonly value="megan.ratcliff@icloud.com" class="flex-grow bg-gray-100 border-gray-300 rounded-md shadow-sm p-2"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;button onclick="copyToClipboard('email-input', 'copy-email-text')" class="bg-gray-200 text-gray-700 px-4 py-2 rounded-md hover:bg-gray-300"&gt;Copy&lt;/button&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;span id="copy-email-text" class="text-sm text-green-600 hidden mt-1"&gt;Copied!&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// --- Mobile Menu Toggle ---</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const mobileMenuButton = document.getElementById('mobile-menu-button');</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const mobileMenu = document.getElementById('mobile-menu');</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>mobileMenuButton.addEventListener('click', () =&gt; {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>mobileMenu.classList.toggle('hidden');</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>});</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// --- Experience Details Toggle ---</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// Updated to handle the "Previous Experience" section collapse</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const toggleButtons = document.querySelectorAll('.toggle-details');</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>toggleButtons.forEach(button =&gt; {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>button.addEventListener('click', () =&gt; {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>// Check if the button has a data-target attribute, otherwise assume previousElementSibling</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>const targetId = button.dataset.target;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>const details = targetId ? document.getElementById(targetId) : button.previousElementSibling;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>details.classList.toggle('show');</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>if (details.classList.contains('show')) {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>button.textContent = 'Show Less';</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>} else {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>button.textContent = 'Show More';</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>});</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>});</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// --- Contact Modal Logic ---</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const modal = document.getElementById('contact-modal');</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const modalContent = modal.querySelector('.modal-content');</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const contactTriggers = document.querySelectorAll('[data-modal-trigger]');</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const closeModalButton = document.getElementById('close-modal-button');</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const openModal = () =&gt; {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>modal.classList.remove('hidden');</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// Use setTimeout to allow the display property to change before starting the transition</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>setTimeout(() =&gt; {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>modal.style.opacity = '1';</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>modalContent.style.opacity = '1';</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>modalContent.style.transform = 'scale(1)';</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}, 10);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>};</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const closeModal = () =&gt; {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>modalContent.style.opacity = '0';</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>modalContent.style.transform = 'scale(0.95)';</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>modal.style.opacity = '0';</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// Wait for the transition to finish before hiding the modal</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>setTimeout(() =&gt; {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>modal.classList.add('hidden');</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}, 300);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>};</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>contactTriggers.forEach(trigger =&gt; {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>trigger.addEventListener('click', openModal);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>});</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>closeModalButton.addEventListener('click', closeModal);</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// Close modal when clicking on the overlay</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>modal.addEventListener('click', (event) =&gt; {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (event.target === modal) {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>closeModal();</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>});</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// --- Clipboard Logic ---</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function copyToClipboard(inputId, messageId) {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const input = document.getElementById(inputId);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const message = document.getElementById(messageId);</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// For security reasons, navigator.clipboard.writeText might be blocked in some environments.</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// A common fallback is to use the older document.execCommand('copy').</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>input.select();</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>input.setSelectionRange(0, 99999); // For mobile devices</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>try {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>document.execCommand('copy');</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>message.classList.remove('hidden');</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>setTimeout(() =&gt; {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>message.classList.add('hidden');</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>}, 2000);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>} catch (err) {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>console.error('Failed to copy text: ', err);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-gray-900">Megan Ratcliff</div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="text-gray-600 hover:text-indigo-600 transition">About</a>
+                <a href="#expertise" class="text-gray-600 hover:text-indigo-600 transition">Expertise</a>
+                <a href="#experience" class="text-gray-600 hover:text-indigo-600 transition">Experience</a>
+                <a href="#accolades" class="text-gray-600 hover:text-indigo-600 transition">Accolades & Certifications</a>
+                <button data-modal-trigger class="bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 transition">Contact</button>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 hover:text-indigo-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#about" class="block py-2 text-gray-600 hover:text-indigo-600 transition">About</a>
+            <a href="#expertise" class="block py-2 text-gray-600 hover:text-indigo-600 transition">Expertise</a>
+            <a href="#experience" class="block py-2 text-gray-600 hover:text-indigo-600 transition">Experience</a>
+            <a href="#accolades" class="block py-2 text-gray-600 hover:text-indigo-600 transition">Accolades & Certifications</a>
+            <button data-modal-trigger class="block w-full mt-2 bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 transition text-center">Contact</button>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12 fade-in">
+
+        <section id="about" class="py-20">
+            <div class="grid md:grid-cols-5 gap-12 items-center">
+                <div class="md:col-span-2">
+                    <img src="https://i.imgur.com/KfmoeP2.jpeg" alt="Megan Ratcliff Headshot" class="rounded-lg shadow-2xl w-full max-w-sm mx-auto" onerror="this.onerror=null;this.src='https://placehold.co/400x400/E2E8F0/4A5568?text=Megan+R.';">
+                </div>
+                <div class="md:col-span-3">
+                    <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight mb-4">
+                        Hi, I'm Megan.
+                    </h1>
+                    <p class="text-lg text-gray-600 mb-6">
+                        I'm a B2B Marketing Strategist & AI Enabler, passionate about turning 'A-ha' Moments into Revenue. I build and lead high-performing marketing teams that bridge the gap between sales and marketing to drive exceptional growth.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-6">
+                        My passion lies in strengthening the bridge between marketing and sales, ensuring that every initiative directly supports our shared revenue goals while delivering genuine value to our clients.
+                    </p>
+                    <p class="text-lg text-gray-600">
+                        What sets my approach apart is the specialized marketing AI ecosystem I leverage—from strategic planners to campaign copywriters. This allows my teams to amplify their capabilities, blending cutting-edge technology with the essential human connection that builds lasting business relationships.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="ai-ecosystem" class="py-20 border-t bg-white">
+            <div class="text-center">
+                <h2 class="text-4xl font-bold text-gray-900 mb-12">My Marketing AI Ecosystem</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-12">
+                    This is how I structure my AI-powered marketing teams. By creating a hub-and-spoke model with specialized AI agents, we amplify our capabilities, ensuring every part of the marketing engine is optimized for performance while maintaining the critical human element of strategy and connection.
+                </p>
+                <div class="max-w-4xl mx-auto">
+                    <img src="https://i.imgur.com/NcntMJQ.png" alt="Marketing AI Ecosystem Diagram" class="rounded-lg shadow-xl w-full" onerror="this.onerror=null;this.src='https://placehold.co/1024x576/E2E8F0/4A5568?text=AI+Ecosystem+Diagram';">
+                </div>
+            </div>
+        </section>
+
+        <section id="expertise" class="py-20 border-t">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">Areas of Expertise</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                <div class="skill-tag bg-gray-100 p-4 rounded-lg text-center">
+                    <h3 class="text-lg font-semibold text-gray-900">Demand Generation</h3>
+                </div>
+                <div class="skill-tag bg-gray-100 p-4 rounded-lg text-center">
+                    <h3 class="text-lg font-semibold text-gray-900">GTM Strategy</h3>
+                </div>
+                <div class="skill-tag bg-gray-100 p-4 rounded-lg text-center">
+                    <h3 class="text-lg font-semibold text-gray-900">Account-Based Experience (ABX)</h3>
+                </div>
+                <div class="skill-tag bg-gray-100 p-4 rounded-lg text-center">
+                    <h3 class="text-lg font-semibold text-gray-900">Sales & Marketing Alignment</h3>
+                </div>
+                <div class="skill-tag bg-gray-100 p-4 rounded-lg text-center">
+                    <h3 class="text-lg font-semibold text-gray-900">AI Enablement</h3>
+                </div>
+                <div class="skill-tag bg-gray-100 p-4 rounded-lg text-center">
+                    <h3 class="text-lg font-semibold text-gray-900">Integrated Campaigns</h3>
+                </div>
+                <div class="skill-tag bg-gray-100 p-4 rounded-lg text-center">
+                    <h3 class="text-lg font-semibold text-gray-900">Partnership Marketing</h3>
+                </div>
+                <div class="skill-tag bg-gray-100 p-4 rounded-lg text-center">
+                    <h3 class="text-lg font-semibold text-gray-900">Team Leadership</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="py-20 border-t">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">Professional Journey</h2>
+            <div class="space-y-8">
+                <div class="bg-white p-8 rounded-lg shadow-lg experience-card">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-3xl font-bold text-gray-900"><a href="https://dice.com/hiring" target="_blank" rel="noopener noreferrer" class="text-gray-900 hover:text-indigo-600 transition">Dice</a></h3>
+                            <p class="text-lg text-indigo-600 font-medium">December 2023 - Present</p>
+                        </div>
+                    </div>
+                    <div class="space-y-6 border-l-2 border-indigo-100 pl-6">
+                        <div>
+                            <h4 class="text-xl font-semibold">Senior Director, Marketing</h4>
+                            <p class="text-sm text-gray-500 mb-2">June 2025 - Present</p>
+                            <p class="text-gray-600">Leading end-to-end marketing strategy for Dice's two-sided marketplace, driving growth for both tech professionals and the companies that hire them, including initiatives to reduce Customer Acquisition Cost (CAC).</p>
+                            <div class="details-content">
+                                <ul class="list-disc list-inside text-gray-600 mt-2 pl-2 space-y-1">
+                                    <li>Orchestrating comprehensive digital transformation (DX) initiatives to modernize customer experience.</li>
+                                    <li>Optimizing B2B demand generation and ABX programs while navigating macroeconomic headwinds.</li>
+                                    <li>Evolving B2C acquisition strategy to balance growth with resource optimization.</li>
+                                    <li>Driving revenue through integrated campaigns across paid media, SEO/GEO, content strategy, and partnership channels.</li>
+                                </ul>
+                            </div>
+                            <button class="toggle-details text-indigo-600 hover:underline mt-2 font-semibold">Show More</button>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-semibold">Director, Marketing</h4>
+                            <p class="text-sm text-gray-500 mb-2">January 2025 - July 2025</p>
+                            <p class="text-gray-600">Partnered across go-to-market teams to drive B2B growth during a period of significant market transformation, including leading partnership marketing that exceeded revenue targets by 60% and improving MQL-C/W conversion rate by 2%.</p>
+                            <div class="details-content">
+                                <ul class="list-disc list-inside text-gray-600 mt-2 pl-2 space-y-1">
+                                    <li>Scaled ABX pilot program to full production, working with sales leadership to identify target accounts and create coordinated engagement strategies.</li>
+                                    <li>Spearheaded cross-functional Conversion Rate Taskforce to optimize buyer journey touchpoints.</li>
+                                    <li>Adapted demand generation strategy in response to search ecosystem changes and macroeconomic pressures.</li>
+                                </ul>
+                            </div>
+                            <button class="toggle-details text-indigo-600 hover:underline mt-2 font-semibold">Show More</button>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-semibold">Senior Manager, Marketing</h4>
+                            <p class="text-sm text-gray-500 mb-2">December 2023 - January 2025</p>
+                            <p class="text-gray-600">Led ABX go-to-market strategy for Dice, driving B2B growth through integrated marketing campaigns and strategic agency partnerships, delivering 12% more MQLs YoY with 52% more efficiency and funding new opportunities through cost efficiencies.</p>
+                            <div class="details-content">
+                                <ul class="list-disc list-inside text-gray-600 mt-2 pl-2 space-y-1">
+                                    <li>Used cost efficiencies to fund the ABX program that is delivering net new opportunities for the org.</li>
+                                </ul>
+                            </div>
+                            <button class="toggle-details text-indigo-600 hover:underline mt-2 font-semibold">Show More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow-lg experience-card">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-3xl font-bold text-gray-900"><a href="https://www.quarry.com/" target="_blank" rel="noopener noreferrer" class="text-gray-900 hover:text-indigo-600 transition">Quarry</a></h3>
+                            <p class="text-lg text-indigo-600 font-medium">November 2022 - December 2023</p>
+                        </div>
+                    </div>
+                    <div class="border-l-2 border-indigo-100 pl-6">
+                        <div>
+                            <h4 class="text-xl font-semibold">Account Director</h4>
+                            <p class="text-gray-600">Led account and marketing strategy for enterprise B2B tech clients including LG, Epiroc, Wonderlic, and Tackle.io, notably securing and growing the Epiroc partnership and developing an award-winning ABM campaign.</p>
+                            <div class="details-content">
+                                <ul class="list-disc list-inside text-gray-600 mt-2 pl-2 space-y-1">
+                                    <li>Architected integrated demand generation strategies across the full marketing stack.</li>
+                                    <li>Partnered with C-suite executives to align marketing initiatives with business objectives.</li>
+                                    <li>Contributed to new business efforts, leveraging client success stories to expand agency portfolio.</li>
+                                </ul>
+                            </div>
+                            <button class="toggle-details text-indigo-600 hover:underline mt-2 font-semibold">Show More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow-lg experience-card">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-3xl font-bold text-gray-900"><a href="https://anthologic.com/" target="_blank" rel="noopener noreferrer" class="text-gray-900 hover:text-indigo-600 transition">Anthologic</a></h3>
+                            <p class="text-lg text-indigo-600 font-medium">March 2015 - November 2022</p>
+                        </div>
+                    </div>
+                    <div class="space-y-6 border-l-2 border-indigo-100 pl-6">
+                        <div>
+                            <h4 class="text-xl font-semibold">Account Director</h4>
+                            <p class="text-sm text-gray-500 mb-2">January 2019 - November 2022</p>
+                            <p class="text-gray-600">Led multi-million dollar client portfolios across diverse B2B industries, providing strategic oversight on integrated campaigns with a strong focus on demonstrating ROI through robust measurement frameworks.</p>
+                            <div class="details-content">
+                                <ul class="list-disc list-inside text-gray-600 mt-2 pl-2 space-y-1">
+                                    <li>Orchestrated full-service client experiences spanning digital media, PR, creative, marketing automation, and content strategy.</li>
+                                    <li>Led organic growth planning and execution, expanding existing client relationships.</li>
+                                    <li>Mentored and developed direct reports, building a high-performing account team.</li>
+                                </ul>
+                            </div>
+                            <button class="toggle-details text-indigo-600 hover:underline mt-2 font-semibold">Show More</button>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-semibold">Account Manager</h4>
+                            <p class="text-sm text-gray-500 mb-2">January 2016 - January 2019</p>
+                            <p class="text-gray-600">Managed marketing and communication strategies for diverse B2B clients across multiple industries, delivering a 63% increase in MQLs quarter-over-quarter through strategic digital approaches.</p>
+                            <div class="details-content">
+                                <ul class="list-disc list-inside text-gray-600 mt-2 pl-2 space-y-1">
+                                    <li>Built and executed global channel program strategies that ensured seamless brand continuity.</li>
+                                    <li>Managed complex client budgets and project timelines, ensuring on-time and on-budget delivery.</li>
+                                </ul>
+                            </div>
+                            <button class="toggle-details text-indigo-600 hover:underline mt-2 font-semibold">Show More</button>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-semibold">Program Manager</h4>
+                            <p class="text-sm text-gray-500 mb-2">March 2015 - January 2016</p>
+                            <p class="text-gray-600">Managed the "Power Launch" program for a network of dealers, consulting on their marketing plans and localizing national assets.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg experience-card">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-3xl font-bold text-gray-900">Previous Experience</h3>
+                        <button class="toggle-details text-indigo-600 hover:underline font-semibold" data-target="previous-experience-details">Show More</button>
+                    </div>
+                    <div id="previous-experience-details" class="details-content space-y-6 border-l-2 border-indigo-100 pl-6">
+                        <div>
+                            <h4 class="text-xl font-semibold">Inside Sales and Project Manager</h4>
+                            <p class="text-md text-gray-600 font-medium">Allegra Marketing, Print, Mail</p>
+                            <p class="text-sm text-gray-500 mb-2">November 2011 - February 2015</p>
+                            <p class="text-gray-600">Planned, developed, and tracked direct marketing campaigns for clients, including non-profits.</p>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-semibold">Print Production Manager</h4>
+                            <p class="text-md text-gray-600 font-medium">Two Rivers Marketing</p>
+                            <p class="text-sm text-gray-500 mb-2">March 2011 - November 2011</p>
+                            <p class="text-gray-600">Managed print production for a dealer-based client in the construction industry.</p>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-semibold">Marketing Coordinator</h4>
+                            <p class="text-md text-gray-600 font-medium">U.S. Roasterie</p>
+                            <p class="text-sm text-gray-500 mb-2">July 2010 - April 2011</p>
+                            <p class="text-gray-600">Developed the marketing plan and generated new business through various marketing outlets.</p>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-semibold">LDP Associate</h4>
+                            <p class="text-md text-gray-600 font-medium">Garner Printing</p>
+                            <p class="text-sm text-gray-500 mb-2">May 2009 - July 2010</p>
+                            <p class="text-gray-600">Learned the print industry through rotations in production, accounting, fulfillment, and project management.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="thought-leadership" class="py-20 border-t">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">Thought Leadership</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                    <img src="https://i.imgur.com/cTFqviS.png" alt="The Human + AI Org LinkedIn Post" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/E2E8F0/4A5568?text=Post+Image';">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-semibold mb-2">The Human + AI Org</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">"We all know that feeling - back-to-back meetings all day, then racing to deliver on commitments in those precious 30-minute gaps. So here's what I built for myself: a personal AI agent ecosystem that helps me think, create, and deliver better work even when time is tight."</p>
+                        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7307820390821548032/" target="_blank" rel="noopener noreferrer" class="text-indigo-600 font-semibold hover:underline mt-auto">Read on LinkedIn &rarr;</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                    <img src="https://i.imgur.com/2kOabwl.png" alt="ROI LinkedIn Post" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/E2E8F0/4A5568?text=Post+Image';">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-semibold mb-2">The ROI "Sweaty Palms" Moment</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">"Ever get sweaty palms when someone asks: 'What exactly are we doing in B2B demand right now?' Just me? Well, if it is you too - keep reading. Picture this: you have a complex demand gen strategy with multiple channels, campaign tiers, and audience segments—but trying to explain it all in a meeting often leads to glazed-over eyes and missed details."</p>
+                        <a href="https://www.linkedin.com/posts/megan-ratcliff_ever-get-sweaty-palms-when-someone-asks-activity-7326693408578621440-JaKa?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer" class="text-indigo-600 font-semibold hover:underline mt-auto">Read on LinkedIn &rarr;</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                    <img src="https://i.imgur.com/fRK1FpJ.png" alt="Future of Marketing Leadership Post" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/E2E8F0/4A5568?text=Post+Image';">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-semibold mb-2">The Future of Marketing Leadership</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">"Is this the future of marketing leadership? I've been curious lately with how my marketing role might evolve alongside AI. So I did what marketers do - I visualized it. The process started with simple questions: What parts of my job could be enhanced by AI? Which elements require that irreplaceable human touch?"</p>
+                        <a href="https://www.linkedin.com/posts/megan-ratcliff_is-this-the-future-of-marketing-leadership-activity-7325661787524075521-Dzc9?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer" class="text-indigo-600 font-semibold hover:underline mt-auto">Read on LinkedIn &rarr;</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                    <img src="https://i.imgur.com/1w5ffaH.png" alt="GTM Playbook Post" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/E2E8F0/4A5568?text=Post+Image';">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-semibold mb-2">The GTM Playbook is Dead. Now What?</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">"Everyone keeps saying the GTM playbook is dead. Cool. Now what? Here's what I actually did about it: I built an AI GTM strategist to help me evaluate our approach and figure out how to operate without the old rules..."</p>
+                        <a href="https://www.linkedin.com/posts/megan-ratcliff_everyone-keeps-saying-the-gtm-playbook-is-activity-7333237380977410048-Yn2H?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer" class="text-indigo-600 font-semibold hover:underline mt-auto">Read on LinkedIn &rarr;</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="https://www.linkedin.com/in/megan-ratcliff/recent-activity/all/" target="_blank" rel="noopener noreferrer" class="bg-indigo-600 text-white px-8 py-4 rounded-md text-lg font-semibold hover:bg-indigo-700 transition shadow-lg hover:shadow-xl">See More on LinkedIn</a>
+            </div>
+        </section>
+        
+        <section id="media" class="py-20 border-t bg-white">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">In the Media</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md text-center flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2">Webinar: The Human + AI Org Playbook</h3>
+                        <p class="text-gray-600 mb-4">Featured as a panelist on this 6sense webinar discussing the integration of AI into marketing organizations.</p>
+                    </div>
+                    <a href="https://6sense.com/events-webinars/the-human-ai-org-playbook/" target="_blank" rel="noopener noreferrer" class="text-indigo-600 font-semibold hover:underline mt-auto">Watch Now &rarr;</a>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md text-center flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2">Article: Boldest AI Moves</h3>
+                        <p class="text-gray-600 mb-4">Mentioned in a LinkedIn article on how smaller teams are making significant strides with AI.</p>
+                    </div>
+                    <a href="https://www.linkedin.com/pulse/boldest-ai-moves-coming-from-smallest-budgets-liza-adams-tyumc/?trackingId=a%2BbEOo0iRRav%2BmNhSbznng%3D%3D" target="_blank" rel="noopener noreferrer" class="text-indigo-600 font-semibold hover:underline mt-auto">Read Article &rarr;</a>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md text-center flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2">Article: AI is Redefining GTM Jobs</h3>
+                        <p class="text-gray-600 mb-4">Quoted in a LinkedIn article about the evolution of go-to-market roles with the rise of AI.</p>
+                    </div>
+                    <a href="https://www.linkedin.com/pulse/ai-redefining-gtm-jobs-from-tool-users-teammates-liza-adams-9nc7c/" target="_blank" rel="noopener noreferrer" class="text-indigo-600 font-semibold hover:underline mt-auto">Read Article &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="accolades" class="py-20 border-t">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">Accolades & Certifications</h2>
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="bg-white p-8 rounded-lg shadow-lg mb-8">
+                    <p class="text-2xl font-semibold text-indigo-600 mb-4">Dice "HERO" Award</p>
+                    <p class="text-gray-600">Received for outstanding performance in 2024.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg mb-8">
+                    <p class="text-2xl font-semibold text-indigo-600 mb-4">2020 Gold Medal Winner - B2 Awards</p>
+                    <p class="text-gray-600">Employer Branding Category for the "United. Inspired" campaign.</p>
+                </div>
+
+                <h3 class="text-3xl font-bold text-gray-900 mt-12 mb-8">Certifications</h3>
+                <div class="space-y-6">
+                    <div class="bg-gray-100 p-6 rounded-lg text-left">
+                        <h4 class="text-xl font-semibold text-gray-900">Fundamentals of Next-Gen Marketing</h4>
+                        <p class="text-md text-gray-600">6sense | Issued April 2024</p>
+                        <p class="text-sm text-gray-500 mt-1">Skills: Account based marketing</p>
+                    </div>
+
+                    <div class="bg-gray-100 p-6 rounded-lg text-left">
+                        <h4 class="text-xl font-semibold text-gray-900">Account-Based Experience (ABX) Certification</h4>
+                        <p class="text-md text-gray-600">Demandbase | Issued November 2022</p>
+                    </div>
+
+                    <div class="bg-gray-100 p-6 rounded-lg text-left">
+                        <h4 class="text-xl font-semibold text-gray-900">ABM Certification: Advanced Course</h4>
+                        <p class="text-md text-gray-600">Demandbase | Issued October 2022</p>
+                    </div>
+
+                    <div class="bg-gray-100 p-6 rounded-lg text-left">
+                        <h4 class="text-xl font-semibold text-gray-900">Marketing Analytics: Data Tools and Techniques</h4>
+                        <p class="text-md text-gray-600">Wharton Online | Issued August 2022</p>
+                    </div>
+
+                    <div class="bg-gray-100 p-6 rounded-lg text-left">
+                        <h4 class="text-xl font-semibold text-gray-900">ABM Certification: Foundations</h4>
+                        <p class="text-md text-gray-600">Demandbase | Issued August 2022</p>
+                    </div>
+                </div>
+
+                <div class="text-center text-gray-600 mt-12">
+                    <p class="text-lg mb-8">I'm always open to discussing new opportunities, sharing insights, or connecting with fellow professionals.</p>
+                    <button data-modal-trigger class="bg-indigo-600 text-white px-8 py-4 rounded-md text-lg font-semibold hover:bg-indigo-700 transition shadow-lg hover:shadow-xl">Let's Connect</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Megan Ratcliff. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <div id="contact-modal" class="modal-overlay fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50 hidden">
+        <div class="modal-content bg-white rounded-lg shadow-2xl p-8 w-full max-w-md transform scale-95 opacity-0">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-3xl font-bold text-gray-900">Contact Me</h2>
+                <button id="close-modal-button" class="text-gray-500 hover:text-gray-800 text-3xl">&times;</button>
+            </div>
+            <div class="space-y-6">
+                <div>
+                    <label class="block text-sm font-medium text-gray-500">Email</label>
+                    <div class="flex items-center space-x-2 mt-1">
+                        <input id="email-input" type="text" readonly value="megan.ratcliff@icloud.com" class="flex-grow bg-gray-100 border-gray-300 rounded-md shadow-sm p-2">
+                        <button onclick="copyToClipboard('email-input', 'copy-email-text')" class="bg-gray-200 text-gray-700 px-4 py-2 rounded-md hover:bg-gray-300">Copy</button>
+                    </div>
+                    <span id="copy-email-text" class="text-sm text-green-600 hidden mt-1">Copied!</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // --- Mobile Menu Toggle ---
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // --- Experience Details Toggle ---
+        // Updated to handle the "Previous Experience" section collapse
+        const toggleButtons = document.querySelectorAll('.toggle-details');
+        toggleButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Check if the button has a data-target attribute, otherwise assume previousElementSibling
+                const targetId = button.dataset.target;
+                const details = targetId ? document.getElementById(targetId) : button.previousElementSibling;
+                
+                details.classList.toggle('show');
+                if (details.classList.contains('show')) {
+                    button.textContent = 'Show Less';
+                } else {
+                    button.textContent = 'Show More';
+                }
+            });
+        });
+
+        // --- Contact Modal Logic ---
+        const modal = document.getElementById('contact-modal');
+        const modalContent = modal.querySelector('.modal-content');
+        const contactTriggers = document.querySelectorAll('[data-modal-trigger]');
+        const closeModalButton = document.getElementById('close-modal-button');
+
+        const openModal = () => {
+            modal.classList.remove('hidden');
+            // Use setTimeout to allow the display property to change before starting the transition
+            setTimeout(() => {
+                modal.style.opacity = '1';
+                modalContent.style.opacity = '1';
+                modalContent.style.transform = 'scale(1)';
+            }, 10);
+        };
+
+        const closeModal = () => {
+            modalContent.style.opacity = '0';
+            modalContent.style.transform = 'scale(0.95)';
+            modal.style.opacity = '0';
+            // Wait for the transition to finish before hiding the modal
+            setTimeout(() => {
+                modal.classList.add('hidden');
+            }, 300);
+        };
+
+        contactTriggers.forEach(trigger => {
+            trigger.addEventListener('click', openModal);
+        });
+
+        closeModalButton.addEventListener('click', closeModal);
+
+        // Close modal when clicking on the overlay
+        modal.addEventListener('click', (event) => {
+            if (event.target === modal) {
+                closeModal();
+            }
+        });
+
+        // --- Clipboard Logic ---
+        function copyToClipboard(inputId, messageId) {
+            const input = document.getElementById(inputId);
+            const message = document.getElementById(messageId);
+            
+            // For security reasons, navigator.clipboard.writeText might be blocked in some environments.
+            // A common fallback is to use the older document.execCommand('copy').
+            input.select();
+            input.setSelectionRange(0, 99999); // For mobile devices
+
+            try {
+                document.execCommand('copy');
+                message.classList.remove('hidden');
+                setTimeout(() => {
+                    message.classList.add('hidden');
+                }, 2000);
+            } catch (err) {
+                console.error('Failed to copy text: ', err);
+            }
+        }
+    </script>
 </body>
 </html>
